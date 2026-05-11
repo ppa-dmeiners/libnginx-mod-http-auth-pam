@@ -1,0 +1,5 @@
+Version: 5
+Template: Github
+Owner: sto
+Project: ngx_http_auth_pam_module
+Uversion-Mangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha|a|b)\d*)$/$1~$2/

@@ -1,0 +1,25 @@
+Source: libnginx-mod-http-auth-pam
+Section: httpd
+Priority: optional
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Uploaders: Jan Mojžíš <janmojzis@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-nginx,
+               libpam0g-dev,
+Standards-Version: 4.7.2
+Homepage: https://github.com/sto/ngx_http_auth_pam_module
+Vcs-Git: https://salsa.debian.org/nginx-team/libnginx-mod-http-auth-pam.git
+Vcs-Browser: https://salsa.debian.org/nginx-team/libnginx-mod-http-auth-pam
+Rules-Requires-Root: no
+
+Package: libnginx-mod-http-auth-pam
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: PAM authentication module for Nginx
+ The nginx_http_auth_pam module enables authentication using PAM.
+ .
+ The module uses PAM as a backend for simple http authentication. It
+ also allows setting the pam service name to allow more fine grained control.
